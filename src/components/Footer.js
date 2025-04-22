@@ -15,11 +15,19 @@ export const Footer = () => {
             <img src={logo} alt="Logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
-              <a href="https://linkedin.com/in/gagan-pandey-4514b0289"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
-            </div>
+          <div className="social-icon">
+  <a href="https://linkedin.com/in/gagan-pandey-4514b0289" target="_blank" rel="noopener noreferrer">
+    <img src={navIcon1} alt="Icon" />
+  </a>
+  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <img src={navIcon2} alt="Icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <img src={navIcon3} alt="Icon" />
+  </a>
+</div>
+<p>Copyright 2022. All Rights Reserved</p>
+
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
         </Row>
