@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Software Engineer", "Web Developer", "Software Tester" ];
   const period = 2000;
 
   useEffect(() => {
@@ -19,8 +19,8 @@ export const Banner = () => {
       tick();
     }, delta);
 
-    return () => { clearInterval(ticker) };
-  }, [text])
+    return () => clearInterval(ticker);
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -35,7 +35,6 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
@@ -45,35 +44,36 @@ export const Banner = () => {
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
-  }
+  };
 
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Gagan`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Web Developer", "Software Tester" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Hi, I'm Gagan Pandey – a passionate Software Engineer with a strong interest in Competitive Programming, Web Development, and AI/ML. I love solving real-world problems through code and continuously explore new technologies to enhance my skills and build impactful projects.
-
-</p>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Gagan `}<span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
+                  <p>
+                    Hi, I'm Gagan Pandey – a passionate Software Engineer with a strong interest in Competitive Programming, Web Development, and AI/ML. I love solving real-world problems through code and continuously explore new technologies to enhance my skills and build impactful projects.
+                  </p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                </div>
+              }
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" />
                 </div>}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
-  )
+  );
 }
