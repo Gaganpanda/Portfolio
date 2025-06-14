@@ -9,9 +9,9 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer", "Web Developer", "Software Tester" ];
+  const toRotate = ["Java Developer", "Web Developer", "AI/ML Engineer"];
   const period = 2000;
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>{`Hi! I'm Gagan `}<span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
                   <p>
-                    Hi, I'm Gagan Pandey – a passionate Software Engineer with a strong interest in Competitive Programming, Web Development, and AI/ML. I love solving real-world problems through code and continuously explore new technologies to enhance my skills and build impactful projects.
+                    Hi, I'm Gagan Pandey – a passionate Software Engineer with a strong interest in Java Development, MERN Stack, and AI/ML. I love solving real-world problems through code and continuously explore new technologies to enhance my skills and build impactful projects.
                   </p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>

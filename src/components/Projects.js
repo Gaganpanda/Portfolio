@@ -1,8 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg1 from "../assets/img/project-img01.png";
+import projImg2 from "../assets/img/project-img02.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg5 from "../assets/img/project-img5.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -10,38 +11,34 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-  ];
+  {
+    title: "Bank Management System",
+    description: "Java-based app for managing accounts and transactions.",
+    imgUrl: projImg1,
+  },
+  {
+    title: "Tour & Travel Booking",
+    description: "MERN app for trip planning and reservations.",
+    imgUrl: projImg2,
+  },
+  {
+    title: "Employee Management System",
+    description: "React app for managing employee data.",
+    imgUrl: projImg3,
+  },
+  {
+    title: "Learning Management System",
+    description: "MERN platform for course and user management.",
+    imgUrl: projImg1,
+  },
+  {
+    title: "Ecommerce Website",
+    description: "Full-featured MERN website for online shopping.",
+    imgUrl: projImg5,
+  },
+];
 
+  
   return (
     <section className="project" id="projects">
       <Container>
@@ -51,7 +48,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>I have worked on a variety of projects, ranging from web applications to AI-driven solutions. Each project has helped me develop my skills in problem-solving, teamwork, and utilizing modern technologies to deliver efficient solutions. Below are some examples of my work.</p>
+                <p>I have worked on a variety of projects focused on Java and the MERN stack, ranging from robust backend systems to full-stack web applications. These projects have strengthened my skills in object-oriented programming, RESTful API development, and building scalable, responsive interfaces. Each experience has enhanced my problem-solving abilities, collaboration in team environments, and proficiency with modern development tools and technologies. Below are some examples of my work.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
