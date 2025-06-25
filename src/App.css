@@ -52,7 +52,10 @@ p, a, li, button, ul {
 a:hover {
   text-decoration: none;
 }
-
+.navbar img{
+  width: 100px;
+  height: auto;
+}
 img {
   width: 100%;
   height: auto;
