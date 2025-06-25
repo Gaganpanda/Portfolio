@@ -25,8 +25,13 @@ export const Footer = () => {
   <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
     <img src={navIcon3} alt="Icon" />
   </a>
-</div>
 
+</div>
+  <p>
+    <a href="mailto:2004gaganpandey@gmail.com" style={{ color: '#fff', textDecoration: 'none' }}>
+     2004gaganpandey@gmail.com
+    </a>
+  </p>
 
             <p>Copyright 2025. All Rights Reserved</p>
           </Col>
