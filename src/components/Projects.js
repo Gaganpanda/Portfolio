@@ -13,7 +13,7 @@ export const Projects = () => {
   const projects = [
   {
     title: "Bank Management System",
-    description: "Java-based app for managing accounts and transactions.",
+    description: "Java-based project for managing accounts and transactions.",
     imgUrl: projImg1,
   },
   {
@@ -23,13 +23,8 @@ export const Projects = () => {
   },
   {
     title: "Employee Management System",
-    description: "React app for managing employee data.",
+    description: "Java-based project for managing employee data.",
     imgUrl: projImg3,
-  },
-  {
-    title: "Learning Management System",
-    description: "MERN platform for course and user management.",
-    imgUrl: projImg1,
   },
   {
     title: "Ecommerce Website",
